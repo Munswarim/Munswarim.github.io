@@ -11,8 +11,44 @@
   </head>
 
   <body>
-    Welcome to Munswarim's Portfolio
+    
+    <ul id="slide-out" class="sidenav sidenav-fixed collapsible">
+      <li><a href="#!"><i class="material-icons">home</i>Index</a></li>
+      <li><a href="#!"><i class="material-icons">work_history</i>Experience</a></li>
+      <li><a href="#!"><i class="material-icons">school</i>Academics</a></li>
+      <li>
+        <a class="collapsible-header" href="#!" style="padding: 0 32px;"><i class="material-icons">settings_ethernet</i>Projects</a>
+        <div class="collapsible-body">
+          <ul style="padding-left: 32px;">
+            <li><a href="#!"><i class="tiny material-icons">insert_chart</i>Professional Projects</a></li>
+            <li><a href="#!"><i class="tiny material-icons">insert_chart</i>Academic Projects</a></li>
+            <li><a href="#!"><i class="tiny material-icons">insert_chart</i>Personal Projects</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#!"><i class="material-icons">chrome_reader_mode</i>Publications</a></li>
+      <li><a href="#!"><i class="material-icons">extension</i>Training</a></li>
+      <li><a href="#!"><i class="material-icons">attachment</i>Certificates</a></li>
+    </ul>
+    
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+      });
+    </script>
+
   </body>
 </html>
